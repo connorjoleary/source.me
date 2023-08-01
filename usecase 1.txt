@@ -1,0 +1,35 @@
+use case 1: sam the user is in a conversation with connor. connor states that tin foil has a shiny side an a dull side 
+because if you cover a dish in the oven with the dull side up the contents will heat up faster than if the shiny side 
+is up, and vice versa. Sam has recently seen a video called ‘tin foil productions and myths’ which debunks the idea 
+Connor stated. When sam says to connor that his claim is not true, and Connor insists on proof. Sam’s issue begins 
+with how the videos timeline(as seen bellow) is set up.
+
+timeline of video:
+0 - 90 sec: HEY GUYS ITS YOUR BOY TANNER! Thanks for clicking on my video. I wanted to start with a quick update on my 
+studio flooding that I talked about last time. We got all the water out, and thanks to all your guys' love and support 
+during this difficult time. You guys raised over 12k to help rebuild my studio space, and I can't tell you what that means
+to both me and my family. We're rebuilt and ready to get back to making the best tin foil related videos on the internet,
+but before we jump in don’t forget to LIKE, COMMENT, AND SUBSCRIBE!
+
+90 - 240 sec: today we are talking about the myth that tin foil has a dull side and a shiny side because the placement of 
+foil affects how fast what it covers heats up. But first lets talk about the history of how tin foil came to have a shiny and 
+dull side. It starts in the early 1900s where the first tin foil was made by mike foil who took a piece of tin and hammered it 
+so thin that it became a foil, originally this would have been considered tin leafing, but regardless at this point both sides 
+would have been very dull………. And now tin foil has a shiny side and a dull side because of how the rollers on manufacturing 
+rollers are set up. 
+
+240 - 300 sec: now as for the claim that which side of the foil is places face up or down affects how fast the contents heat up. 
+The University of Michigan conducted a study in 2016 that tested the same dishes with the same foil in the same oven over 50 times
+and found that the food heated up at the same rate regardless of which side was used, shiny or dull.
+
+300 - 600 sec: anyways guys let me show you the new studio…
+
+Sam can easily find the video he watched and send it to Connor, but he is worried that because the video is 10 min long that he will 
+be unlikely to click on it. Sam also realizes that most of the video doesn’t have anything to do with the claim he wants to prove. Sam 
+also remembers that a study had been mentioned that proved his point but can't remember the details, and doesn't have time to watch and 
+search through the video well talking to connor. So Sam copied the URL of the video and inputs it into sauce.me. Sauce.me identifies 
+that a source was used “The university of michigan conducted a study in 2016” and that the claim “side of the foil is placed face up or 
+down affects the how fast the contents heat up” combining the claim and source a google search is done to find the original study from 
+the university of michigan, when found the user is given the link in a sharable way, and sam send the direct link to the study to connor 
+and proves his point. 
+
