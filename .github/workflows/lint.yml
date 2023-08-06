@@ -17,5 +17,5 @@ jobs:
       - uses: isort/isort-action@v1
         if: always()
         with:
-          requirements-files: "requirements.txt"
+          requirements-files: "src/requirements.txt"
           
