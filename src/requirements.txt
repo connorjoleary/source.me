@@ -1,0 +1,4 @@
+black>=23.7.0
+
+python-dotenv>=1.0.0
+google-api-python-client>=2.95.0
