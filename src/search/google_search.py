@@ -22,7 +22,3 @@ def run_search(query: str):
         for i in res["items"]
     ]
     return filtered_res
-
-
-res = run_search("Silver in blood causes people to turn blue.")
-pprint.pprint(res)
