@@ -1,0 +1,29 @@
+The DNA double helix is one of the more iconic images in all of science. Slapping a twisty piece of DNA on something is guaranteed to make it look more science-y.
+
+But there's a reason it looks like that. It turns out our cells have a finely tuned sense of aesthetics. The DNA inside our cells is almost exclusively right-handed.
+
+This doesn't mean it never has to fight over the single lefty desk in the lecture hall. Instead, it means the double helix twists from lower left to upper right whether you're holding it upside down or right side up. Now, just to be clear, our DNA can temporarily form left-handed helices under incredibly specific conditions.
+
+But those lefty molecules look pretty bizarre, and while they might crop up in cells in specific situations, the majority of the time our genetic code is stored in a right-handed twist. And that's the kind of helix our cells are adapted to decode if our genetic information were left-handed, our cells wouldn't be able to use it! This biological preference for right-handed DNA is very strict.
+
+In fact, it holds across all forms of life which is kind of odd. Why does DNA have to twist the same way in every living organism? The leading hypothesis to explain why DNA always twists to the right has to do with the shape of its building blocks, or nucleotides.
+
+And nucleotides are chiral, a word used to describe things that are mirror images of each other, like your left and right hand. No matter how much you flip or twist a pair of chiral molecules, you can't superimpose them. The double helix twists toward the right.
+
+But when we talk about left- or right-handed when talking about a nucleotide, it just means one of those two mirror-image forms. Our cells only have the left-handed form of these DNA nucleotides, and they only make right-handed helices. The mirror images of our nucleotides would theoretically make left-handed helices.
+
+So the question becomes: why do all living cells only use left-handed nucleotides? The short answer is that there may just have been more of them around 4 billion years ago when life first evolved. But the longer, more interesting answer might come from space.
+
+Specifically, from the high-energy radiation known as cosmic rays. When cosmic rays shower down on Earth's atmosphere, they cause gas molecules in the atmosphere to break down into atomic particles like electrons. In the breakdown process, the cosmic rays put a bit of a spin on the electrons.
+
+Which, once again, means they can go left or right. But a funny quirk about electrons from degraded atoms is that they are more likely to spin towards the left than the right. In fact, while rightward spinning electrons can be generated in a lab, they have never been observed in nature.
+
+And physicists have yet to come up with a good reason why. Regardless, about fifty years ago, scientists tried to reconcile this electron asymmetry with the lack of left-handed DNA helices in nature. They proposed that these lefty electrons could preferentially destroy chiral molecules of a single handedness, like the right-handed nucleotides that form left-handed DNA helices.
+
+Then, in 2015, scientists demonstrated that that's physically possible -- maybe. They shot a beam of left- or right-handed electrons at a gas and found a slight difference. The right-handed electrons destroyed 0.03% more right-handed gas molecules than lefty ones.
+
+That's a tiny number. But researchers believe it's possible that over billions of years, that miniscule percentage could add up or that this reaction could be amplified somehow through other means. Regardless, if left-handed DNA nucleotides are even that tiny bit more resistant to space radiation, they'd still be an evolutionary advantage for right-handed helices.
+
+Of course, this experiment only demonstrates the general chemical idea that electrons might interact differently with different-handed molecules. It didn't actually show anything to do with DNA directly. But it is a first step toward understanding why our cells have such an ingrained bias against southpaw DNA.
+
+Thanks for watching this episode of SciShow, and thanks to all the awesome patrons who support what we do. If you'd like to help out, as well as join an awesome community of people and maybe earn some sweet perks, check out patreon.com/scishow.
