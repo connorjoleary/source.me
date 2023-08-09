@@ -1,5 +1,4 @@
 import os
-import pprint
 
 from dotenv import load_dotenv
 from googleapiclient.discovery import build
