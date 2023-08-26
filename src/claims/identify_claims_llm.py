@@ -1,7 +1,6 @@
 import os
 from typing import List
 
-import openai
 from dotenv import load_dotenv
 from langchain import PromptTemplate
 from langchain.chat_models import ChatOpenAI
@@ -34,8 +33,7 @@ class List_Claims(BaseModel):
 def setup_model() -> ChatOpenAI:
     load_dotenv("./keys.env")
 
-    openai_api_key = os.getenv("OPEN_AI_KEY")
-    openai.api_key = openai_api_key
+    openai_api_key = os.getenv("OPENAI_API_KEY")
     return ChatOpenAI(openai_api_key=openai_api_key, model_name="gpt-4")
 
 
