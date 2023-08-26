@@ -4,16 +4,10 @@ from typing import List
 from dotenv import load_dotenv
 from langchain import PromptTemplate
 from langchain.chat_models import ChatOpenAI
-from langchain.output_parsers import (
-    PydanticOutputParser,
-    ResponseSchema,
-    StructuredOutputParser,
-)
-from langchain.prompts import (
-    ChatPromptTemplate,
-    HumanMessagePromptTemplate,
-    SystemMessagePromptTemplate,
-)
+from langchain.output_parsers import (PydanticOutputParser, ResponseSchema,
+                                      StructuredOutputParser)
+from langchain.prompts import (ChatPromptTemplate, HumanMessagePromptTemplate,
+                               SystemMessagePromptTemplate)
 from pydantic import BaseModel, Field, validator
 
 
@@ -25,11 +19,11 @@ class Claim(BaseModel):
         description="the source provided for the claim or the word none if none are given"
     )
 
-    @validator("claim")
-    def claim_in_transcript(cls, field):
-        if str(field) not in transcript:
-            print("claim is not in transcript")
-        return field
+    # @validator("claim")
+    # def claim_in_transcript(cls, field):
+    #     if str(field) not in transcript:
+    #         print("claim is not in transcript")
+    #     return field
 
 
 class List_Claims(BaseModel):
@@ -43,7 +37,7 @@ def setup_model() -> ChatOpenAI:
     return ChatOpenAI(openai_api_key=openai_api_key, model_name="gpt-4")
 
 
-def setup_prompts_and_messages():
+def setup_prompts_and_messages(output_parser):
     system_message = SystemMessagePromptTemplate.from_template(
         "You are a helpful assistant that, when given a video transcript, identifies the claims made and any sources provided"
     )
@@ -54,8 +48,6 @@ def setup_prompts_and_messages():
     {format_instructions}
     """
     )
-
-    output_parser = PydanticOutputParser(pydantic_object=List_Claims)
     format_instructions = output_parser.get_format_instructions()
 
     prompt = ChatPromptTemplate(
@@ -66,9 +58,10 @@ def setup_prompts_and_messages():
     return prompt
 
 
-def identify_claims(transcript: str):
+def identify_claims(transcript: str) -> List_Claims:
     llm = setup_model()
-    prompt = setup_prompts_and_messages()
+    output_parser = PydanticOutputParser(pydantic_object=List_Claims)
+    prompt = setup_prompts_and_messages(output_parser)
     _input = prompt.format_prompt(transcript=transcript)
     output = llm(_input.to_messages())
-    return output
+    return output_parser.parse(output.content)
