@@ -4,16 +4,10 @@ from typing import List
 from dotenv import load_dotenv
 from langchain import PromptTemplate
 from langchain.chat_models import ChatOpenAI
-from langchain.output_parsers import (
-    PydanticOutputParser,
-    ResponseSchema,
-    StructuredOutputParser,
-)
-from langchain.prompts import (
-    ChatPromptTemplate,
-    HumanMessagePromptTemplate,
-    SystemMessagePromptTemplate,
-)
+from langchain.output_parsers import (PydanticOutputParser, ResponseSchema,
+                                      StructuredOutputParser)
+from langchain.prompts import (ChatPromptTemplate, HumanMessagePromptTemplate,
+                               SystemMessagePromptTemplate)
 from pydantic import BaseModel, Field, validator
 
 
