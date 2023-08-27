@@ -26,5 +26,6 @@ jobs:
         env:
             CUSTOM_SEARCH: ${{ secrets.CUSTOM_SEARCH }}
             SEARCH_ENGINE: ${{ secrets.SEARCH_ENGINE }}
+            OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: |
           pytest
