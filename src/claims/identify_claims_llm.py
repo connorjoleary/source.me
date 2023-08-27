@@ -2,19 +2,14 @@ import os
 from typing import List
 
 from dotenv import load_dotenv
-from langchain import PromptTemplate
 from langchain.chat_models import ChatOpenAI
-from langchain.output_parsers import (
-    PydanticOutputParser,
-    ResponseSchema,
-    StructuredOutputParser,
-)
+from langchain.output_parsers import PydanticOutputParser
 from langchain.prompts import (
     ChatPromptTemplate,
     HumanMessagePromptTemplate,
     SystemMessagePromptTemplate,
 )
-from pydantic import BaseModel, Field, validator
+from pydantic import BaseModel, Field
 
 
 class Claim(BaseModel):
@@ -24,12 +19,6 @@ class Claim(BaseModel):
     source: str = Field(
         description="the source provided for the claim or the word none if none are given"
     )
-
-    # @validator("claim")
-    # def claim_in_transcript(cls, field):
-    #     if str(field) not in transcript:
-    #         print("claim is not in transcript")
-    #     return field
 
 
 class List_Claims(BaseModel):
