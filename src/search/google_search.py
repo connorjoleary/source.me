@@ -8,7 +8,7 @@ CUSTOM_SEARCH = os.getenv("CUSTOM_SEARCH")
 SEARCH_ENGINE = os.getenv("SEARCH_ENGINE")
 
 
-def run_search(query: str):
+def run_search(query: str) -> list[dict[str, str]]:
     # Build a service object for interacting with the API. Visit
     # the Google APIs Console <http://code.google.com/apis/console>
     # to get an API key for your own application.
