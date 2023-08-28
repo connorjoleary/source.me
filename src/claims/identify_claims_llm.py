@@ -1,5 +1,4 @@
 import os
-from typing import List
 
 from dotenv import load_dotenv
 from langchain.chat_models import ChatOpenAI
@@ -9,20 +8,8 @@ from langchain.prompts import (
     HumanMessagePromptTemplate,
     SystemMessagePromptTemplate,
 )
-from pydantic import BaseModel, Field
 
-
-class Claim(BaseModel):
-    claim: str = Field(
-        description="an exact quote from the transcript in which the claim is made"
-    )
-    source: str = Field(
-        description="the source provided for the claim or the word none if none are given"
-    )
-
-
-class List_Claims(BaseModel):
-    pairs: List[Claim]
+from common.claims_model import List_Claims
 
 
 def setup_model() -> ChatOpenAI:
@@ -59,4 +46,5 @@ def identify_claims(transcript: str) -> List_Claims:
     prompt = setup_prompts_and_messages(output_parser)
     _input = prompt.format_prompt(transcript=transcript)
     output = llm(_input.to_messages())
+    # TODO check for duplicate claims
     return output_parser.parse(output.content)
