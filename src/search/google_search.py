@@ -1,11 +1,11 @@
-import os
+from common.utils import get_env_var
 
 from dotenv import load_dotenv
 from googleapiclient.discovery import build
 
 load_dotenv("./keys.env")
-CUSTOM_SEARCH = os.getenv("CUSTOM_SEARCH")
-SEARCH_ENGINE = os.getenv("SEARCH_ENGINE")
+CUSTOM_SEARCH = get_env_var("CUSTOM_SEARCH", required=True)
+SEARCH_ENGINE = get_env_var("SEARCH_ENGINE", required=True)
 
 
 def run_search(query: str) -> list[dict[str, str]]:

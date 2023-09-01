@@ -12,9 +12,9 @@ def main(file_path: str):
         transcript = f.read()
 
     claim_pairs = identify_claims(transcript)
-    for claim in claim_pairs.pairs:
+    for claim in claim_pairs:
         # print(claim)
-        if claim.source == "none":
+        if claim.source.lower() == "none":
             search_results = run_search(claim.claim)
             claim_sources[claim.claim] = search_results
             # for result in search_results:

@@ -9,6 +9,9 @@ class Claim(BaseModel):
         description="the source provided for the claim or the word none if none are given"
     )
 
+    def __hash__(self):
+        return hash((self.claim, self.source))
+
 
 class List_Claims(BaseModel):
     pairs: list[Claim]
