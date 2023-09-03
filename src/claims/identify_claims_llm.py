@@ -7,7 +7,7 @@ from langchain.prompts import (
     SystemMessagePromptTemplate,
 )
 
-from common.claims_model import List_Claims, Claim
+from common.claims_model import Claim, List_Claims
 from common.utils import get_env_var
 
 
@@ -38,8 +38,10 @@ def setup_prompts_and_messages(output_parser):
     )
     return prompt
 
+
 def deduplicate_claims(claims: list[Claim]) -> set[Claim]:
     return set(claims)
+
 
 def identify_claims(transcript: str) -> set[Claim]:
     llm = setup_model()

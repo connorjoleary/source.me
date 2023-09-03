@@ -13,18 +13,15 @@ def main(file_path: str):
 
     claim_pairs = identify_claims(transcript)
     for claim in claim_pairs:
-        # print(claim)
         if claim.source.lower() == "none":
             search_results = run_search(claim.claim)
             claim_sources[claim.claim] = search_results
-            # for result in search_results:
-            #     print(result)
-            #     print()
         else:
             claim_sources[claim.claim] = claim.source
 
     return claim_sources
 
 
-claim_sources = main("test/truth/scishow_dna/transcript.txt")
-print(json.dumps(claim_sources, indent=2))
+if __name__ == "__main__":
+    claim_sources = main("test/truth/scishow_dna/transcript.txt")
+    print(json.dumps(claim_sources, indent=2))

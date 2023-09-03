@@ -1,7 +1,7 @@
-from common.utils import get_env_var
-
 from dotenv import load_dotenv
 from googleapiclient.discovery import build
+
+from common.utils import get_env_var
 
 load_dotenv("./keys.env")
 CUSTOM_SEARCH = get_env_var("CUSTOM_SEARCH", required=True)
