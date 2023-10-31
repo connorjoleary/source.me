@@ -18,4 +18,5 @@ jobs:
         if: always()
         with:
           requirements-files: "src/requirements.txt"
+          configuration: "--profile black --check-only --diff"
           

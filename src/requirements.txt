@@ -3,3 +3,5 @@ isort==5.12.0
 
 python-dotenv>=1.0.0
 google-api-python-client>=2.95.0
+langchain>=0.0.263
+openai>=0.27.8

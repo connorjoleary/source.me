@@ -1,6 +1,9 @@
 name: Python Test
 
-on: [push]
+on:
+  push:
+    paths:
+    - '**.py'
 
 jobs:
   build:
@@ -8,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        python-version: ["3.8"]
+        python-version: ["3.11"]
 
     steps:
       - uses: actions/checkout@v3
@@ -26,5 +29,6 @@ jobs:
         env:
             CUSTOM_SEARCH: ${{ secrets.CUSTOM_SEARCH }}
             SEARCH_ENGINE: ${{ secrets.SEARCH_ENGINE }}
+            OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: |
           pytest
